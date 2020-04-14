@@ -19,7 +19,7 @@ class TimeForecaster:
 
         if r.status_code == 200:
             body = json.loads(r.text)
-            return body['tansyo']
+            return body
 
         else:
             body = json.loads(r.text)
